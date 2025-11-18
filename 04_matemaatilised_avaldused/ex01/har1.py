@@ -69,4 +69,10 @@ if __name__ == "__main__":
     addition_result, difference = sum_and_difference(5, 6)
     assert addition_result == 11
     assert difference == -1
-print(area_of_a_circle(5))
+
+    float_d = float_division(10,5)
+    assert float_d == 2.0
+
+    integer_d = integer_division(10,5)
+
+
