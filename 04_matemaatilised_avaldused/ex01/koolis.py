@@ -6,7 +6,6 @@ def hello_world():
 
 def calculate_in_python():
     print(3 + 8 / (4 - 2) * 4)
-    #print(3 + 8 / 4 - 2 * 4) works same as in normal math
 
 def random_text_print():
     random_text1 = "kill-koll kill-koll "

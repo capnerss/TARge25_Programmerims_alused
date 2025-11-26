@@ -74,5 +74,3 @@ if __name__ == "__main__":
     assert float_d == 2.0
 
     integer_d = integer_division(10,5)
-
-
