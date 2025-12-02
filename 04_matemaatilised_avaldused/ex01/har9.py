@@ -13,7 +13,10 @@ def are_equal(num_a: int, num_b: int) -> str:
 
     :return: "equal" if given numbers are equal and "not equal" if they aren't.
     """
-    # your code goes here
+    if num_a == num_b:
+        return "equal"
+    else:
+        return "not equal"
 
 
 def positive_or_negative(num_a: int) -> str:
@@ -27,7 +30,12 @@ def positive_or_negative(num_a: int) -> str:
     :param num_a: given integer
     :return "negative", "positive" or "zero" depending on the given integer.
     """
-    # your code goes here
+    if num_a < 0:
+        return "negative"
+    elif num_a > 0:
+        return "positive"
+    else:
+        return "zero"
 
 
 def is_in_string(letter: str, word: str) -> bool:
@@ -41,7 +49,10 @@ def is_in_string(letter: str, word: str) -> bool:
     :param word: given word.
     :return: boolean depending on if given letter is in given word.
     """
-    # your code goes here
+    if letter in word:
+        return True
+    else:
+        return False
 
 
 def are_same_length(str_a: str, str_b: str) -> bool:
@@ -55,7 +66,10 @@ def are_same_length(str_a: str, str_b: str) -> bool:
     :param str_a: second string
     :return boolean True or False.
     """
-    # your code goes here
+    if len(str_a) == len(str_b):
+        return True
+    else:
+        return False
 
 
 def is_letter_or_digit(symbol: str) -> str:
@@ -69,7 +83,12 @@ def is_letter_or_digit(symbol: str) -> str:
     :param symbol: symbol
     :return "letter", "digit" or "other".
     """
-    # your code goes here
+    if symbol.isalpha():
+        return "letter"
+    elif symbol.isdigit():
+        return "digit"
+    else:
+        return "other"
 
 
 def are_last_symbols_same(str_a: str, str_b: str) -> bool:
@@ -83,7 +102,10 @@ def are_last_symbols_same(str_a: str, str_b: str) -> bool:
     :param str_b: second string.
     :return boolean.
     """
-    # your code goes here
+    if str_a[-1] == str_b[-1]:
+        return True
+    else:
+        return False
 
 
 def hundred(num_a: int) -> int:
@@ -97,4 +119,19 @@ def hundred(num_a: int) -> int:
     :param num_a: given positive integer
     :return int.
     """
-    # your code goes here
+    if num_a < 100:
+        return abs(num_a - 100)
+    else:
+        return int(num_a % 100)
+if __name__ == "__main__":
+    addition_result = hundred(45)
+    assert addition_result == 55
+    float_d = hundred(100)
+    assert float_d == 0
+    float_c = hundred(110)
+    assert float_c == 10
+
+    abc = is_in_string("a", "car")
+    assert abc == True
+    abd = is_in_string("b", "car")
+    assert abd == False

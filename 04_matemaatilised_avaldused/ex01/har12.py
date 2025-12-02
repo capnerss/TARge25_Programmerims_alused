@@ -1,0 +1,1 @@
+print("xyyzxyzxzxyyxxyy".count('yy'))
