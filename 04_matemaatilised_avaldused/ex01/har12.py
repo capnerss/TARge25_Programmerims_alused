@@ -52,3 +52,9 @@ Loo muutuja backwards, mille väärtus on esialgne sõne tagurpidi (ehk "!nuf si
 Loo muutuja every_other, mille väärtus on esialgsest sõnest iga järgmine täht ehk esimene, kolmas, viies jne.
 
 Loo muutuja first_word_reversed, mille väärtus on esialgse sõne esimene sõna (ehk Programming) tagurpidi."""
+
+
+original_string = "Programming is fun!"
+backwards = original_string[::-1]
+every_other = original_string[::2]
+first_word_reversed = original_string[0:11][::-1]
