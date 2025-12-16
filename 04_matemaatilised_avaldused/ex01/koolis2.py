@@ -55,13 +55,25 @@ def dog_calculator(number_1:float, number_2:float, operation:str)->str:
         return f"Urrrr"
     return f"{result * "auh "}"
 
+"""Ülesanne 5
+Koosta programm, mis küsib kasutajalt temperatuuri Celsiuse kraadides ja väljastab tulemuse Fahrenheiti kraadides. 
+Kuidas muuta programmi nii, et võimalik oleks teisendamine nii üht- kui teistpidi? Proovi."""
+
+
+def celsiuse_fahrenheiti():
+    cel_fah = input("Temperatuuri Celsiuse(C) kraadides voi Fahrenheiti(F) kraadides")
+    kraad = float(input("Kui palju"))
+    result = 0
+    if cel_fah.upper() == "C":
+        result = (kraad * 1.8) + 32
+    elif cel_fah.upper() == "F":
+        result = (kraad - 32) / 1.8
+    return result
+
 
 if __name__ == "__main__":
-    # # compute_triangle()
+    #  compute_triangle()
     # name = input("Mis on sinu nimi?")
     # age = int(input("Mis on sinu vanus?"))
     # print(f"{name_greet(name)}, {age_validation(age)}")
-    number_1 = int(input())
-    number_2 = int(input())
-    tehe = input()
-    print(calculator(number_1, number_2, tehe))
+    print(celsiuse_fahrenheiti())
